@@ -24,7 +24,7 @@ public class MainActivity extends Activity
 				String pass = e2.getText().toString();
 				int pos = email.indexOf("@");
 				pos-=1;
-				String word = pass.substring(0,pos+1);
+				String word = email.substring(0,pos+1);
 				if(pass.equals(word)){
 					Toast.makeText(getBaseContext(), "Logging in " +email , Toast.LENGTH_SHORT ).show(); 
 				}  
